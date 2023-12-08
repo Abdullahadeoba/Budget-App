@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budget-error">
+                        Value cannot be empty or Negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter Total amount">
+                    <button class="submit" id="total-amount-button">Set Budget</button>
+                </div>
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="product-title-error">Value cannot be empty</p>
+                    <input type="text" class="product-title" placeholder="Enter the Title of Product">
+
+                    <input type="number" id="user-amount" placeholder="Enter cost of product">
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="balance-output">0</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
