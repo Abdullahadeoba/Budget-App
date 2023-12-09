@@ -67,13 +67,13 @@ document.getElementById("list").appendChild(sublistContent);
 checkAmountButton.addEventListener("click", () => {
     if (!userAmount.value || !productTitle.value) {
         productTitleError.classList.remove("hide");
-        return false;
+        return true;
     }
     disableButtons (false);
     let expenditure = parseInt(userAmount.value);
     let sum = parseInt(expenditureValue.innerText) + expenditure;
     expenditureValue.innerText = sum
-    const totalBalance = tempAmount- sum;
+    const totalBalance = tempAmount - sum;
     balanceValue.innerText = totalBalance
     listCreator(productTitle.value, userAmount.value);
     productTitle.value = "";
