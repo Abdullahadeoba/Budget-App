@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #f7f9fd;
+    background-color: #f7f9ff;
 }
 .wrapper{
     width: 90%;
@@ -45,6 +45,7 @@ body{
     color: #414a67;
     outline: none;
     font-weight: 400;
+    margin-bottom: 0.6em;
 }
 .container input :focus{
     border-color: #587ef4;
@@ -56,7 +57,7 @@ body{
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.23m rgba(28, 0, 80, 0.06);
 }
-.outpot-container{
+.output-container{
     background-color: #587ef4;
     color: #ffffff;
     border-radius: 0.3em;
@@ -65,7 +66,77 @@ body{
     margin: 2em 0;
     padding: 1.2em;
 }
-.ouput-container p{
+.output-container p{
     font-weight: 500;
     margin-bottom: 0.6em;
+}
+.output-container span{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+.submit{
+    font-size: 1em;
+    margin-top: 0.8em;
+    background-color: #587ef4;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+.list{
+    background-color: #ffffff;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+}
+.sub-content{
+    width: 100%;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0;
+}
+.product{
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: #363d55;
+}
+.amount{
+    color: #414a67;
+    margin-left: 20%;
+}
+.icon-container{
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+.product-title{
+    margin-bottom: 1.2em;
+}
+.hide{
+    display: none;
+}
+.error{
+    color: #ff465a;
+}
+.edit{
+    margin-left: auto;
+}
+.edit,.delete{
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #587ef4;
+}
+@media screen and (max-width:600px) {
+    .wrapper{
+        font-size: 14px;
+    }    
+    .sub-container{
+        grid: template columns 1fr;
+    }
 }
