@@ -67,7 +67,7 @@ document.getElementById("list").appendChild(sublistContent);
 checkAmountButton.addEventListener("click", () => {
     if (!userAmount.value || !productTitle.value) {
         productTitleError.classList.remove("hide");
-        return true;
+        return false;
     }
     disableButtons (false);
     let expenditure = parseInt(userAmount.value);
