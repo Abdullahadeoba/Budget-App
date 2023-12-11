@@ -65,10 +65,20 @@ document.getElementById("list").appendChild(sublistContent);
 };
 
 checkAmountButton.addEventListener("click", () => {
+    const userAmount = document.getElementById("user-amount");
+    const productTitle = document.getElementById("product-title");
+    const productTitleError = document.getElementById("product-title-error");
+
+  
     if (!userAmount.value || !productTitle.value) {
-        productTitleError.classList.remove("hide");
-        return false;
+        productTitleError.classList.add("hide");
+        return true;
     }
+
+    productTitleError.classList.remove("hide");
+     return false;
+   
+    });
     disableButtons (false);
     let expenditure = parseInt(userAmount.value);
     let sum = parseInt(expenditureValue.innerText) + expenditure;
@@ -78,4 +88,4 @@ checkAmountButton.addEventListener("click", () => {
     listCreator(productTitle.value, userAmount.value);
     productTitle.value = "";
     userAmount.value = ""
-});
+
