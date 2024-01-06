@@ -3,59 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <link rel="stylesheet" href="style.css">
+    <title>BUDGET APP</title>
+    <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
  <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
 </head>
 <body>
-    <main>
-        <div>
-            <img src="grading pro.avif" alt="">
-        </div>
-        <div class="wrapper">
-            <div class="container">
-                <div class="sub-container">
-                    <div class="total-amount-container">
-                        <h3>Budget</h3>
-                        <p class="hide error" id="budget-error">
-                            Value cannot be empty or Negative
-                        </p>
-                        <input type="number" id="total-amount" placeholder="Enter Total amount">
-                        <button class="submit" id="total-amount-button">Set Budget</button>
-                    </div>
-                    <div class="user-amount-container">
-                        <h3>Expenses</h3>
-                        <p class="hide error" id="product-title-error">Value cannot be empty</p>
-                        <input type="text" class="product-title" placeholder="Enter the Title of Product">
-                       
-                        <input type="number" id="user-amount" placeholder="Enter cost of product"> 
-                        <button class="submit" id="check-amount">Check Amount</button>
-                    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budget-error">
+                        Value cannot be empty or Negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter Total amount">
+                    <button class="submit" id="total-amount-button">Set Budget</button>
                 </div>
-                    <div class="output-container flex-space">
-                        <div>
-                            <p>Total Budget</p>
-                            <span id="amount">0</span>
-                        </div>
-                        <div>
-                            <p>Expenses</p>
-                            <span id="expenditure-value">0</span>
-                        </div>
-                        <div>
-                            <p>Balance</p>
-                            <span id="balance-amount">0</span>
-                        </div>
-                    </div>
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="product-title-error">Value cannot be empty</p>
+                    <input type="text" class="product-title" placeholder="Enter the Title of Product">
+                   
+                    <input type="number" id="user-amount" placeholder="Enter cost of product"> 
+                    <button class="submit" id="check-amount">Check Amount</button>
                 </div>
-                <div class="list">
-                    <h3>Expense List</h3>
-                    <div class="list-container" id="list">
-    
+            </div>
+                <div class="output-container flex-space">
+                    <div>
+                        <p>Total Budget</p>
+                        <span id="amount">0</span>
+                    </div>
+                    <div>
+                        <p>Expenses</p>
+                        <span id="expenditure-value">0</span>
+                    </div>
+                    <div>
+                        <p>Balance</p>
+                        <span id="balance-amount">0</span>
                     </div>
                 </div>
             </div>
-    </main>
+            <div class="list">
+                <h3>Expense List</h3>
+                <div class="list-container" id="list">
+
+                </div>
+            </div>
+        </div>
 
 
 
