@@ -79,7 +79,7 @@ checkAmountButton.addEventListener("click", () => {
      return false;
    
     });
-    disableButtons (true);
+    disableButtons (false);
     let expenditure = parseInt(userAmount.value);
     let sum = parseInt(expenditureValue.innerText) + expenditure;
     expenditureValue.innerText = sum
